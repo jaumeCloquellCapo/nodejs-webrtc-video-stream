@@ -1,0 +1,83 @@
+.jumbotron {
+  text-align: center;
+  color: white;
+  background:url(https://wallpapercave.com/wp/BuDNEVb.jpg);
+}
+
+
+body{
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/85/ee/10/85ee105e59c0b3acc3bb9b53ca01e557.jpg);
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 20px;
+    background: white;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 90%;
+    
+    background: url(https://www.futbolplayaveteranossantander.com/wp-content/uploads/2016/08/33736.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+
+
+#chapterMenuSection {
+  background-color: lightgrey;
+  border-radius:10px;
+  padding: 20px;
+  border:1px solid;
+  display:inline-block;
+  margin:0px 30px 30px 30px;
+  width:90%;
+}
+
+figure.img {
+  margin: 30px;
+  float: left;
+}
+
+figcaption.desc {
+  text-align: center;
+  font-weight: normal;
+  margin: 2px;
+}
+
+.thumb {
+  height: 75px;
+
+}
+
+.thumb:hover {
+    box-shadow: 5px 5px 5px red;
+}
+
+.desc{
+  background-color: red;
+  color : darkblue;
+  
+}
+

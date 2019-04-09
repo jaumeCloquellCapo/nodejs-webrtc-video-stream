@@ -1,0 +1,56 @@
+WEBVTT
+
+chapter-1
+00:00:10.000 --> 00:00:12.000
+{
+	"description": "Suarez",
+	"image": "https://www.100xcientofutbol.com/wp-content/uploads/092915-Soccer-Barcelona-Luis-Suarez-pi-ssm.vresize.1200.675.high_.69.jpg"
+}
+
+
+chapter-2
+00:00:49.206 --> 00:01:00.000 
+{
+	"description": "Iniesta",
+	"image": "https://www.sportyou.es/blog/wp-content/uploads/2016/10/andres-iniesta.jpg"
+}
+
+
+chapter-3
+00:01:09.034 --> 00:01:10.000
+{
+	"description": "Messi",
+	"image": "http://www.mundodeportivo.com/r/GODO/MD/p4/Barca/Imagenes/2017/03/12/Recortada/img_ppunti_20170304-230802_imagenes_md_propias_ppunti_170304fcb450-kCvC-U428222405462fG-980x554@MundoDeportivo-Web.jpg"
+}
+
+
+chapter-4
+00:01:44.014 --> 00:01:47.000 
+{
+	"description": "Cavani",
+	"image": "http://www.fichajes.net/files/cavani_gg_1.jpg"
+}
+
+
+chapter-5
+00:01:56.208 --> 00:01:57.000 
+{
+	"description": "Neymar",
+	"image": "http://image2.redbull.com/rbcom/010/2016-04-19/P-20160419-00182/0010/1/1500/1000/1/neymar-jr-durante-un-partido-del-fc-barcelona.jpg"
+}
+
+
+chapter-6
+00:02:00.125 --> 00:02:15.000
+{
+	"description": "Neymar",
+	"image": "http://image2.redbull.com/rbcom/010/2016-04-19/P-20160419-00182/0010/1/1500/1000/1/neymar-jr-durante-un-partido-del-fc-barcelona.jpg"
+}
+
+
+chapter-7
+00:02:24.000 --> 00:02:25.500
+{
+	"description": "Sergi Roberto",
+	"image": "http://images.performgroup.com/di/library/goal_es/5d/21/sergi-roberto-barcelona-psg-uefa-champions-league-08032016_zmmtll7r3ruo16an9180hev8d.jpg?t=-1342963366&w=620&h=430"
+}

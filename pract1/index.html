@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>FCB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://alumnes-ltim.uib.es/gdie02b/1/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/1/">Pract 1</a></li>
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/2/">Pract 2</a></li>
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/3/">Pract 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>FC BARCELONA</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" align="center">
+            <div class="progress" style="width: 50%">
+                <div class="progress-bar" id="progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                </div>
+
+            </div>
+            <div>
+                <video id="myVideo" preload="metadata" crossOrigin="anonymous" style="width: 50%" autoplay>
+                    <source <source src="video/fcb.webm" type="video/webm">
+                    <source src="video/fcb.mp4" type="video/mp4">
+
+                    <track label="Deutsch subtitles" kind="subtitles" src="track.vtt" default>
+                    <track label="English chapters" kind="chapters" src="json.vtt">
+                </video>
+                <h2>Resumen</h2>
+            </div>
+            <div id="chapterMenu"></div>
+        </div>
+
+        <div class="col-sm-12" align="center">
+            <br>
+            <button type="button" class="btn btn-success" onclick="playPause()">Play/Pause</button>
+            <button type="button" class="btn btn-success" onclick="reset()">Reset</button>
+            <button type="button" class="btn btn-danger" onclick="muted()">Muted</button>
+            <br> <br>
+            <input style="width: 15%" id="vol-control" type="range" min="0" max="100" step="1" oninput="setVolumen(this.value)" onchange="setVolumen(this.value)"></input>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!--head>
+    <meta charset=utf-8>
+    <title>Video player with chapter menu</title>
+    <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="all">
+        <h1>Using JSON to describe chapter markers</h1>
+        This example uses a WebVTT file with kind=chapters, that contains JSON cues for associating images and chapter marker descriptions.
+        <p>
+            <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+                <source <source src="video/fcb.webm" type="video/webm">
+                <source src="video/fcb.mp4" type="video/mp4">
+              
+                <track label="Deutsch subtitles" kind="subtitles" srclang="de" src="track.vtt"
+                    default>
+                <track label="English chapters" kind="chapters" srclang="en" src="json.vtt">
+            </video>
+            <h2>Chapter menu</h2>
+            <div id="chapterMenu"></div>
+    </section>
+</body-->

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--skip-->
+    <title>FCB</title>
+    <base href="https://alumnes-ltim.uib.es/gdie02b/3/">
+    <link rel="stylesheet" type="text/css" href="easyrtc/easyrtc.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json">
+    <!--script src="/socket.io/socket.io.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <!--script src="artyom/artyom.min.js"></script-->
+    <!--script src="artyom/artyomCommands.js"></script-->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script type="text/javascript" src="easyrtc/easyrtc.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</head>
+
+<body onload="connect();">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/1/">Pract 1</a></li>
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/2/">Pract 2</a></li>
+                <li><a href="https://alumnes-ltim.uib.es/gdie02b/3/">Pract 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--hide-->
+    <div class="jumbotron">
+        <h1 style="color:white">FC BARCELONA</h1>
+    </div>
+
+    <div class="col-sm-12" align="center">
+
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Hacer VideoConferencia</button>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" align="center">
+            <button class="recButton" id="recButton" onclick="recordVoice()"></button>
+        </div>
+        <div class="col-sm-6" align="center">
+            <p style="color:white">FC Barcelona vs PSG</p>
+            <video id="myVideo" data-dashjs-player autoplay src="video/out_dash.mpd" controls muted></video>
+        </div>
+        <div class="col-sm-6" align="center">
+            <div id="iam" style="color:white">No conectado</div>
+            <br>
+            <div class="col-sm-12" align="center">
+                <video class="easyrtcMirror" autoplay="autoplay" id="selfVideo" muted="true" volume="0"></video>
+            </div>
+            <div class="col-sm-12" align="center">
+                <video autoplay="autoplay" id="callerVideo"></video>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Usuarios conectados</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="conatiner">
+                        <div id="otherClients"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--div id="container">
+        <div id="header">
+        </div>
+        <div id="main">
+            <h1 class="center">nodejs-webrtc-video-stream</h1>
+            <p class="center">Quality HD 720P</p>
+            <hr>
+
+            <div id="demoContainer">
+                <div id="connectControls">
+                    <div id="iam">Not yet connected...</div>
+                    <br />
+                    <strong>Connected users:</strong>
+                    <div id="otherClients"></div>
+                </div>
+                <div id="videos">
+
+                    <div style="position:relative;float:left;" width="1282" height="722">
+                        <video autoplay="autoplay" id="callerVideo"></video>
+                        <video class="easyrtcMirror" autoplay="autoplay" id="selfVideo" muted="true" volume="0"></video>
+                    </div>
+                </div>
+            </div>
+            <br style="clear:both;" />
+            <hr />
+        </div>
+    </div-->
+</body>
+<script>
+    $('#recButton').addClass("notRec");
+
+    $('#recButton').click(function () {
+        if ($('#recButton').hasClass('notRec')) {
+            $('#recButton').removeClass("notRec");
+            $('#recButton').addClass("Rec");
+        }
+        else {
+            $('#recButton').removeClass("Rec");
+            $('#recButton').addClass("notRec");
+        }
+    });
+
+</script>
+
+</html>
